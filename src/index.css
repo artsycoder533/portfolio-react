@@ -20,7 +20,7 @@ body {
 /* navbar */
 .header {
   width: 100%;
-  height: 100%;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,6 +29,7 @@ body {
 .nav {
   display: grid;
   align-items: center;
+  border: 2px soild red;
 }
 
 .nav__brand {
@@ -85,6 +86,7 @@ body {
     gap: 2rem;
     align-items: center;
     transform: translateX(0);
+    font-size: 1rem;
   }
 }
 
@@ -155,7 +157,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .hero__container,
@@ -163,13 +164,34 @@ body {
   max-width: 1400px;
 }
 
-.hero__buttons {
-}
-
 .hero__name {
-
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: rgb(75, 226, 226);
 }
 
 .hero__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
 
+.btn {
+  padding: 0.75rem 1.25rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero__btn--primary {
+  background: rgb(75, 226, 226);
+}
+
+.hero__btn--secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgb(75, 226, 226);
 }

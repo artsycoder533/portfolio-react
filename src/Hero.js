@@ -1,13 +1,13 @@
 export function Hero() {
     return (
-        <section className="hero center">
+        <section className="hero center" id="home">
             <article className="hero__container">
-                <p className="hero__name">Natasha Johnson</p>
-                <h1 className="hero__title">Front End Developer</h1>
+                <h1 className="hero__name">Natasha Johnson</h1>
+                <p className="hero__title">Self-Taught Front End Developer</p>
             </article>
             <article className="hero__buttons">
-                <button className="btn hero_btn--primary">Projects</button>
-                <button className="btn hero_btn--secondary">Contact</button>
+                <button className="btn hero__btn--primary">Projects</button>
+                <button className="btn hero__btn--secondary">Contact</button>
             </article>
         </section>
     );
