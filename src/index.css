@@ -8,7 +8,6 @@
 body {
   background: rgb(27, 27, 27);
   color: white;
-  overflow: hidden;
 }
 
 .center {
@@ -17,28 +16,28 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+  letter-spacing: 1px;
+}
+
 /* navbar */
 .header {
-  width: 100%;
   height: 60px;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 .nav {
-  display: grid;
-  align-items: center;
-  border: 2px soild red;
-}
-
-.nav__brand {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
-.nav__brand h1 {
+.nav__title{
   font-size: 2rem;
   color: rgb(75, 226, 226);
   letter-spacing: 1px;
@@ -47,13 +46,13 @@ body {
 
 .nav__links {
   list-style-type: none;
-  width: 100%;
-  height: calc(100vh - 60px);
+  height: 0;
   background: rgb(27, 27, 27);
   transition: all 0.2s ease;
   display: grid;
   place-items: center;
-  transform: translateX(-100%);
+  width: 80vw;
+  overflow: hidden;
 }
 
 .nav__link {
@@ -72,22 +71,27 @@ body {
 }
 
 .show {
-  transform: translateX(0);
+  height: calc(100vh - 60px);
 }
 
 @media screen and (min-width: 992px){
   .nav {
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
 
   .nav__links {
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
     align-items: center;
     transform: translateX(0);
+  }
+
+  .nav__link {
     font-size: 1rem;
+    font-weight:normal;
   }
 }
 
@@ -144,8 +148,6 @@ body {
 }
 
 
-
-
 @media screen and (min-width: 992px){
   .hamburger__container {
     display: none;
@@ -199,4 +201,10 @@ body {
   background: transparent;
   color: white;
   border: 2px solid rgb(75, 226, 226);
+}
+
+/* projects */
+.projects {
+  height: 100vh;
+  border: 1px solid red;
 }

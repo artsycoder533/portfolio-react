@@ -2,12 +2,12 @@ import { Hamburger } from './Hamburger';
 
 export function Navbar() {
 	return (
-		<header className="header">
-			<nav className="nav center">
+		<header className="header center">
+			<nav className="nav">
 				<section className="nav__brand">
-					<h1>&lt;NJ&gt;</h1>
-					<Hamburger />
+					<h1 className="nav__title">&lt;NJ&gt;</h1>
 				</section>
+				<Hamburger />
 				<ul className="nav__links">
 					<li>
 						<a href="#home" className="nav__link">
