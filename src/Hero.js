@@ -6,8 +6,8 @@ export function Hero() {
                 <p className="hero__title">Self-Taught Front End Developer</p>
             </article>
             <article className="hero__buttons">
-                <button className="btn hero__btn--primary">Projects</button>
-                <button className="btn hero__btn--secondary">Contact</button>
+                <button className="btn btn--primary">Projects</button>
+                <button className="btn btn--secondary">Contact</button>
             </article>
         </section>
     );
