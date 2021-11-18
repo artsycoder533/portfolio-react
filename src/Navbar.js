@@ -6,8 +6,8 @@ export function Navbar() {
 			<nav className="nav center">
 				<section className="nav__brand">
 					<h1>&lt;NJ&gt;</h1>
+					<Hamburger />
 				</section>
-				<Hamburger />
 				<ul className="nav__links">
 					<li>
 						<a href="#home" className="nav__link">
